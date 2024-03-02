@@ -13,7 +13,7 @@ cx, cy = 500,500
 while True:
     success, img = cap.read()
     hands, img = detector.findHands(img)
-    img1 = cv2.imread("img.png")
+    img1 = cv2.imread("img2.png")
  
     if len(hands) == 2:
         if detector.fingersUp(hands[0]) == [1, 1, 0, 0, 0] and \
